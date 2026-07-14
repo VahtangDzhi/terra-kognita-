@@ -3583,6 +3583,24 @@
         transition-duration: .22s !important;
       }
 
+      #solutionTiles .card.flip-card {
+        transform-style: preserve-3d !important;
+        transition: transform .42s cubic-bezier(.22, 1, .36, 1) !important;
+        touch-action: manipulation;
+      }
+
+      #solutionTiles .card.flip-card.flipped {
+        transform: rotateY(180deg) !important;
+      }
+
+      #solutionTiles .card.flip-card:hover {
+        transform: none !important;
+      }
+
+      #solutionTiles .card.flip-card.flipped:hover {
+        transform: rotateY(180deg) !important;
+      }
+
       .float-card.in-view {
         animation: none !important;
       }
