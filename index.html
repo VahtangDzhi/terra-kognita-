@@ -4592,21 +4592,26 @@
     const forceHeroFitStyle = document.createElement("style");
     forceHeroFitStyle.textContent = `
       @media (min-width: 981px) {
-        .hero { min-height: calc(100vh - 112px) !important; }
+        .hero {
+          min-height: clamp(520px, 70vh, 620px) !important;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          overflow: hidden !important;
+        }
         .hero-inner {
-          grid-template-columns: minmax(0, 1fr) 360px !important;
-          min-height: calc(100vh - 112px) !important;
-          padding-left: clamp(42px, 5vw, 76px) !important;
+          grid-template-columns: minmax(0, 1fr) clamp(390px, 31vw, 460px) !important;
+          min-height: clamp(520px, 70vh, 620px) !important;
+          padding-left: clamp(42px, 6vw, 88px) !important;
         }
         .hero-inner > div:first-child {
-          min-height: calc(100vh - 112px) !important;
-          justify-content: center !important;
-          padding: 28px 32px !important;
-          padding-right: 28px !important;
+          min-height: clamp(520px, 70vh, 620px) !important;
+          justify-content: flex-start !important;
+          padding: clamp(72px, 9vh, 96px) 30px 24px 30px !important;
+          padding-right: 30px !important;
         }
         .hero-inner > div:first-child::before {
           font-size: 34px !important;
-          margin-bottom: 12px !important;
+          margin-bottom: 14px !important;
         }
         .hero .eyebrow {
           margin-bottom: 16px !important;
@@ -4635,14 +4640,25 @@
           padding: 10px 16px !important;
         }
         .hero .tech-panel {
-          min-height: calc(100vh - 112px) !important;
-          width: 360px !important;
+          min-height: clamp(520px, 70vh, 620px) !important;
+          width: clamp(390px, 31vw, 460px) !important;
+          background-position: center center !important;
+          background-size: cover !important;
         }
       }
       @media (min-width: 981px) and (max-height: 790px) {
         .hero h1 { font-size: clamp(30px, 2.7vw, 36px) !important; }
         .hero .lead { font-size: 16px !important; }
         .hero .actions { margin-top: 14px !important; }
+        .hero,
+        .hero-inner,
+        .hero-inner > div:first-child,
+        .hero .tech-panel {
+          min-height: 536px !important;
+        }
+        .hero-inner > div:first-child {
+          padding-top: 72px !important;
+        }
       }
     `;
     document.head.appendChild(forceHeroFitStyle);
