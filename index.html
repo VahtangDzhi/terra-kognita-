@@ -3991,6 +3991,24 @@
       border-radius: 0 0 var(--tk-soft-radius) var(--tk-soft-radius) !important;
     }
 
+    .metrics {
+      gap: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+    }
+
+    .metrics .metric {
+      border: 1px solid rgba(18,57,98,.5) !important;
+      box-shadow: 0 18px 40px rgba(18,57,98,.08) !important;
+      margin: 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    .metrics .metric + .metric {
+      margin-left: -1px !important;
+    }
+
     @media (min-width: 981px) {
       .hero-inner {
         grid-template-columns: minmax(0, calc(100% - 390px)) minmax(330px, 390px) !important;
