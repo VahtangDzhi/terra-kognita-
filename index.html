@@ -3518,8 +3518,8 @@
         display: grid !important;
         grid-template-columns: 1fr !important;
         width: 100% !important;
-        padding: 30px 18px 0 !important;
-        gap: 20px !important;
+        padding: 22px 18px 0 !important;
+        gap: 14px !important;
       }
 
       .hero-logo-card {
@@ -3554,7 +3554,9 @@
 
       .actions {
         grid-template-columns: 1fr !important;
-        gap: 10px !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+        width: 100% !important;
       }
 
       .btn,
@@ -3567,8 +3569,8 @@
       }
 
       .hero .tech-panel {
-        min-height: 300px !important;
-        margin: 6px -18px 0 !important;
+        min-height: 280px !important;
+        margin: 0 -18px !important;
         border-left: 0 !important;
         border-right: 0 !important;
         transform: none !important;
@@ -3611,7 +3613,7 @@
 
       section,
       .igs-showcase {
-        padding: 52px 0 !important;
+        padding: 34px 0 !important;
       }
 
       .wrap,
@@ -3623,8 +3625,8 @@
       .section-head,
       .contact {
         grid-template-columns: 1fr !important;
-        gap: 16px !important;
-        margin-bottom: 28px !important;
+        gap: 12px !important;
+        margin-bottom: 22px !important;
       }
 
       .section-head h2,
@@ -3687,15 +3689,15 @@
 
       .map-block {
         grid-template-columns: 1fr !important;
-        margin-top: 22px !important;
+        margin-top: 14px !important;
       }
 
       .visual-map {
-        min-height: 280px !important;
+        min-height: 240px !important;
       }
 
       .regional-map-svg {
-        min-height: 280px !important;
+        min-height: 240px !important;
       }
 
       .office-list {
@@ -3704,7 +3706,7 @@
 
       .office {
         min-height: 0 !important;
-        padding: 18px !important;
+        padding: 16px 18px !important;
         transform: none !important;
       }
 
@@ -3726,8 +3728,8 @@
       .mission-visual,
       .mission-card,
       .mission-card:nth-child(2) {
-        min-height: 300px !important;
-        padding: 28px 22px !important;
+        min-height: 260px !important;
+        padding: 24px 20px !important;
       }
 
       .mission-visual span,
@@ -3762,15 +3764,16 @@
       }
 
       .image-band {
-        min-height: 360px !important;
+        min-height: 320px !important;
         margin-left: -1px !important;
         margin-right: -1px !important;
+        margin-bottom: 24px !important;
       }
 
       .image-panel,
       .image-panel img {
-        min-height: 360px !important;
-        height: 360px !important;
+        min-height: 320px !important;
+        height: 320px !important;
       }
 
       .image-caption {
@@ -3808,6 +3811,20 @@
         padding: 22px !important;
       }
 
+      #about {
+        padding-bottom: 22px !important;
+      }
+
+      #mission {
+        padding-top: 26px !important;
+        padding-bottom: 34px !important;
+      }
+
+      #platform,
+      .igs-showcase {
+        padding-top: 30px !important;
+      }
+
       .timeline {
         grid-template-columns: repeat(5, minmax(230px, 78vw)) !important;
         overflow-x: auto !important;
@@ -3838,6 +3855,21 @@
     }
 
     @media (max-width: 420px) {
+      .hero-inner {
+        padding-top: 18px !important;
+        gap: 10px !important;
+      }
+
+      section,
+      .igs-showcase {
+        padding: 28px 0 !important;
+      }
+
+      .section-head,
+      .contact {
+        margin-bottom: 18px !important;
+      }
+
       .hero h1 {
         font-size: clamp(31px, 10.4vw, 43px) !important;
       }
@@ -3847,7 +3879,42 @@
       }
 
       .hero .tech-panel {
-        min-height: 270px !important;
+        min-height: 238px !important;
+      }
+
+      .actions {
+        margin-top: 12px !important;
+      }
+
+      .actions .btn {
+        min-height: 44px !important;
+      }
+
+      .visual-map,
+      .regional-map-svg {
+        min-height: 220px !important;
+      }
+
+      .mission-visual,
+      .mission-card,
+      .mission-card:nth-child(2) {
+        min-height: 238px !important;
+        padding: 22px 18px !important;
+      }
+
+      .image-band,
+      .image-panel,
+      .image-panel img {
+        min-height: 286px !important;
+        height: 286px !important;
+      }
+
+      #about {
+        padding-bottom: 16px !important;
+      }
+
+      #mission {
+        padding-top: 22px !important;
       }
 
       .section-head h2,
